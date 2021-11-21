@@ -1,0 +1,50 @@
+/* .laptop{
+    height:60vh;
+    background-color: #8b6b18;
+    width: 60vmin;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+/* .casing{
+    border-radius: 10px;
+    height: 15vh;
+    width: 35vh;
+} */
+
+/* .screen{
+    background-color: white;
+    height: calc(15vh - 1px);
+    width: calc(35vh - 1px);
+} */
+
+/* .keyboard{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    background-color:rgb(7, 6, 6);
+    height: 20vh;
+    width: 40vh;
+    border-radius: 4px;
+    border-inline: 10px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    flex-direction: column; 
+
+  
+} */
+/* 
+.button {
+    margin-top: 10px;
+    position: relative;
+    left: 120px;
+    height: 30px;
+    width: 50px;
+    bottom:40px;
+    border-radius: 4px;
+ } */
+
