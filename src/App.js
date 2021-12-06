@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Laptop from "./views/Laptop"
 import './App.css'
 // import './ewa.css'
@@ -9,21 +9,28 @@ import MainBody from "./views/MainBody"
 import RegistrationPage from "./views/RegistrationPage"
 import LoginPage from "./views/LoginPage"
 import Auth from "./ewa/views/auth/Auth";
+import Dashboard from "./ewa/views/dashboard/Dashboard";
 // import Auth from "./ewa/views/auth/Auth"
 
 function App() {
-
-  // let name = 'mojoyin'
-
-  return (
+    let value = false
+    let email = ""
+    try {
+        email = localStorage.getItem("userEmail")
+        if (email !== "" && email !== null) {
+            console.log(email)
+            value = true
+        }
+    }catch(e){
+        email= ""
+        value = false
+    }
+    const [authenticated, setAuthenticated] = useState(value)
+   return (
     <div className="container">
-      {/* <Laptop name="Apple" color="gold" madeIn="China" button="red"/> */}
-      {/* <Laptop name="Dell" color="black" madeIn="Lagos" button="green"/> */}
-      {/* <LoginPage/>*/}
-      {/*<MainBody/>*/}
-      {/*<RegistrationPage/> */}
-       <Auth/>
+        {authenticated ? <Dashboard /> : <Auth setAuthenticated={setAuthenticated}/>}
     </div>
+
   )
 }
 
