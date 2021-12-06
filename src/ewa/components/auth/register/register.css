@@ -1,6 +1,6 @@
 .register_container{
     background-color:white;
-    height: 90vh;
+    height: 98vh;
     width: 25vw;
     padding: 20px;
     position: relative;
@@ -54,6 +54,7 @@
 
 .form_container{
     margin-top: 12vmin;
+    margin-bottom: 12vmin;
 }
 
 .text_container{
