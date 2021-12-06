@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Login from '../../component/auth/login/Login'
+import Login from '../../components/auth/login/Login'
 import Register from '../../components/auth/register/Register'
 
 const Auth = () => {
